@@ -14,7 +14,7 @@
 
 module Engine.ExternalEnvironment where
 
-import           Engine.Engine hiding (fromLens, fromFunctions, nature, liftStochastic)
+import           OpenGames.Engine.Engine hiding (fromLens, fromFunctions, nature, liftStochastic)
 
 ---------------------------------------------------------------------
 -- This module implements a plain pure input version of an open game.

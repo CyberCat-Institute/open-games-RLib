@@ -20,12 +20,12 @@ import           Control.Monad                       (forever)
 import           Control.Monad.IO.Class              (liftIO)
 import           Data.Aeson                          (ToJSON, FromJSON, encode, decode)
 import           Data.ByteString.Lazy.Internal       (ByteString)
-import           Engine.Engine hiding                (fromLens, fromFunctions, state)
+import           OpenGames.Engine.Engine hiding                (fromLens, fromFunctions, state)
 import           Engine.ExternalEnvironment          (ExternalEnvironmentGame, fromFunctions, fromLens, interactWithEnv)
 import           Examples.ExternalEnvironment.Common (extractPayoffAndNextState)
 import           GHC.Generics                        (Generic)
 import           Network.WebSockets.Connection       (PendingConnection)
-import           Preprocessor.Preprocessor
+import           OpenGames.Preprocessor
 import           Servant                             (Handler)
 import qualified Network.WebSockets                  as WS
 

@@ -25,13 +25,13 @@ import           Data.Aeson                          (ToJSON, FromJSON)
 import           Data.Aeson                          (encode, decode)
 import           Data.ByteString.Lazy.Internal       (ByteString)
 import           Data.Tuple.Extra                    (uncurry3)
-import           Engine.Engine hiding (fromLens, fromFunctions, state, nature)
+import           OpenGames.Engine.Engine hiding (fromLens, fromFunctions, state, nature)
 import           Engine.ExternalEnvironment          ( ExternalEnvironmentGame, fromFunctions, fromLens
                                                      , interactWithEnv, liftStochastic, nature )
 import           Examples.ExternalEnvironment.Common (extractNextState)
 import           GHC.Generics                        (Generic)
 import           Network.WebSockets.Connection       (PendingConnection)
-import           Preprocessor.Preprocessor
+import           OpenGames.Preprocessor
 import           Servant                             (Handler)
 import           System.Random
 import qualified Data.Set as S

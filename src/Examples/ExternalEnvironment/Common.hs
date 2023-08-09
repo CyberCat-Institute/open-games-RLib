@@ -1,6 +1,6 @@
 module Examples.ExternalEnvironment.Common (extractNextState, extractPayoffAndNextState) where
 
-import Engine.Engine
+import OpenGames.Engine.Engine
 
 ---------------------------------------------------------------------
 -- Utility functions to extract the next state and payoff from a
